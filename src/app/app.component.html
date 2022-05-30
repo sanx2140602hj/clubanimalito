@@ -1,0 +1,253 @@
+<style>
+     :host {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+    
+    .navbar {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        background-color: #ebebeb;
+        font-weight: 600;
+        height: 95px;
+        box-shadow: 0px 0px 10px black;
+    }
+    
+    .navbar img {
+        height: 82.03px;
+        width: 83.5px;
+        margin-left: 35px;
+        justify-content: center;
+    }
+
+    .optionsnav {
+        justify-content: end;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    
+    .option {
+        color: #004d21;
+    }
+    
+    .option:hover {
+        color: #ff9700;
+    }
+    .optionsnav a.active{
+        color: #004d21;
+        font-size: 21px;
+        text-shadow: 2px 2px 2px grey; 
+    }
+    footer {
+        padding: 7em 0;
+    }
+    
+    .footer-04 {
+        background: #004d21;
+        padding-bottom: 0;
+    }
+    
+    .footer-04 .border-top {
+        border-color: #004d21 !important;
+        background: #004d21;
+    }
+    
+    .footer-04 .footer-heading {
+        font-size: 13px;
+        color: #fff;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    
+    .footer-04 .footer-heading a {
+        letter-spacing: none;
+        font-size: 16px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    
+    .footer-04 p {
+        color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .footer-04 a {
+        color: #f7b633;
+    }
+    
+    .footer-04 .ftco-footer-social li a {
+        color: #fff;
+    }
+    
+    .footer-04 .tagcloud a {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+    }
+    
+    .footer-04 .list-unstyled li a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .footer-04 .list-unstyled a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .footer-04 .ftco-footer-social li a {
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer-04 .logoblanco {
+        height: 167px;
+        width: 164.06px;
+        margin-left: 100%;
+    }
+    
+    .footer-04 .llamada {
+        height: 20px;
+        width: 20px;
+        margin-left: 1%;
+        margin-right: 5%;
+    }
+    
+    .footer-04 .correo {
+        height: 30px;
+        width: 30px;
+        margin-left: -1%;
+        margin-right: 3%;
+    }
+    
+    .footer-04 .ubicacion {
+        height: 20px;
+        width: 20px;
+        margin-left: 1%;
+        margin-right: 5%;
+    }
+    
+    .footer-04 .direc {
+        margin-left: 14%;
+    }
+    
+    .footer-04 .facebook {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .footer-04 .gmail {
+        height: 35px;
+        width: 35px;
+        margin-left: 10px;
+    }
+    /* Responsive Styles */
+    
+    @media screen and (max-width: 767px) {
+        .card-container>*:not(.circle-link),
+        .terminal {
+            width: 100%;
+        }
+        .card:not(.highlight-card) {
+            height: 16px;
+            margin: 8px 0;
+        }
+        .card.highlight-card span {
+            margin-left: 72px;
+        }
+        svg#rocket-smoke {
+            right: 120px;
+            transform: rotate(-5deg);
+        }
+    }
+    
+    @media screen and (max-width: 575px) {
+        svg#rocket-smoke {
+            display: none;
+            visibility: hidden;
+        }
+    }
+</style>
+
+<!-- Toolbar -->
+<!-- <nav class="navbar">
+    <img href="/app" src="/assets/Imagenes/lo.png" />
+    <div class="optionsnav">
+        <ul class="nav justify-content-end">
+            <li routerLinkActive="active" class="mylink">
+                <a class="option nav-link" [routerLink]="['home']">Inicio</a>
+            </li>
+            <li routerLinkActive="active">
+                <a class="option nav-link" [routerLink]="['atracciones']">Atracciones</a>
+            </li>
+            <li routerLinkActive="active">
+                <a class="option nav-link" [routerLink]="['animales']">Animales</a>
+            </li>
+            <li routerLinkActive="active">
+                <a class="option nav-link" [routerLink]="['acerca']">Acerca</a>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img href="/app" src="/assets/Imagenes/lo.png"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" optionsnav collapse navbar-collapse" id="navbarNav">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="option nav-link" routerLinkActive="active" [routerLink]="['home']">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="option nav-link" routerLinkActive="active" [routerLink]="['atracciones']">Atracciones</a>
+            </li>
+            <li  class="nav-item">
+                <a class="option nav-link" routerLinkActive="active" [routerLink]="['animales']">Animales</a>
+            </li>
+            <li class="nav-item">
+                <a class="option nav-link" routerLinkActive="active" [routerLink]="['acerca']">Acerca</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="footer-04">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">
+                    <a>El Club de Los Animalitos</a>
+                </h2>
+                <ul class="list-unstyled">
+                    <li><img class="llamada" src="/assets/Imagenes/llamada.png"><a>2383822333</a></li>
+                    <li><img class="correo" src="assets/Imagenes/correo.png"><a>clubanimalitos@gmail.com</a></li>
+                    <li><img class="ubicacion" src="/assets/Imagenes/ubicacion.png"><a>Calle 1 Pte 1120, Arcadia,</a></li>
+                    <li class="direc"><a> 75760 Tehuacán, Pue.</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">SIGUENOS EN NUESTRAS REDES</h2>
+                <div>
+                    <a href="https://es-la.facebook.com/pages/category/Nonprofit-Organization/El-Club-de-los-Animalitos-El-%C3%BAnico-Zoologico-de-Tehuac%C3%A1n-144347048922442/" target="_blank"><img class="facebook" src="../assets/Imagenes/facebook.png"></a>
+                    <a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><img class="gmail" src="../assets/Imagenes/gmail.png"></a>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <img class="logoblanco" src="/assets/Imagenes/blanco.png" />
+            </div>
+        </div>
+    </div>
+</footer>

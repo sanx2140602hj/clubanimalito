@@ -1,0 +1,197 @@
+<style>
+    .hero img {
+        width: 100%;
+        display: flex;
+        margin-top: 7.5%;
+    }
+    
+    .hero .nombre {
+        margin-top: -40px;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero .nombre h1 {
+        background-color: #CB6162;
+        color: white;
+        font-size: 3rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .animales {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .animales img {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .anim {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #CB6162;
+        margin-bottom: 50px;
+    }
+    
+    .anim h2 {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .anim .card {
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    
+    .anim .col {
+        justify-content: end;
+        text-align: end;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .anim .cola {
+        justify-content: start;
+        text-align: start;
+    }
+    
+    .anim .col div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .descripcion h2 {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .descripcion div {
+        font-size: 20px;
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+    
+    .tarjeta {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tarjeta .card {
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    
+    .tarjeta button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .boton {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .texx {
+        text-align: justify;
+    }
+</style>
+<div class="hero">
+    <img src="../../../../assets/Imagenes/infoani/buitre.jpg" />
+    <div class="nombre">
+        <h1>BUITRE CABEZA ROJA</h1>
+        <!-- MAYUSCUALAS -->
+    </div>
+</div>
+
+<div class="animales">
+    <img src="/assets/Imagenes/aguila.png" />
+</div>
+
+<div class="container anim">
+    <h2>INFORMACION GENERAL</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>Nombre Científico:</div>
+                <div>Clase:</div>
+                <div>Orden:</div>
+                <div>Familia:</div>
+                <div>Alimentación:</div>
+                <div>Hábitat:</div>
+                <div>Camada:</div>
+                <div>Incubación:</div>
+                <div>Longevidad:</div>
+            </div>
+            <div class="cola col">
+                <div> Cathartes aura</div>
+                <!-- Nombre Científico -->
+                <div> Ave </div>
+                <!--  Clase -->
+                <div> Carnívora </div>
+                <!--  Orden -->
+                <div> Aves </div>
+                <!--  Familia -->
+                <div> Carroña</div>
+                <!--  Alimentación -->
+                <div>Pastizales, praderas y humedales </div>
+                <!--  Hábitat-->
+                <div> 1 a 3 huevos</div>
+                <!--  Camada-->
+                <div> 70 a 77 días </div>
+                <!--  Incubación / gestacion-->
+                <div> 20 a 30 años</div>
+                <!--  Longevidad-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container descripcion">
+    <h2>DESCRIPCION</h2>
+    <div class="texx">
+        El buitre americano cabecirrojo o urubú de cabeza roja (Cathartes aura) es una especie de ave Accipitriformes de la familia Cathartidae. Su área de distribución se extiende desde el extremo sur de Sudamérica hasta el sur de Canadá. Habita una variedad
+        de zonas abiertas y semiabiertas, incluyendo bosques subtropicales, matorrales, pastizales y desiertos. Es un ave grande, con una envergadura de 170-183 cm, una longitud de 64-81 cm y un peso que puede variar entre 0,85 y 2,26 kg. u plumaje es
+        marrón oscuro hasta negro; la cabeza y el cuello no tienen plumas y son de color púrpura-rojo. Su pico es corto, ganchudo, y de color marfil. Considerada como en preocupación menor por la lista roja de la IUCN
+    </div>
+</div>
+<div class="container tarjeta">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="liebre()"><img src="/assets/Imagenes/vertical/liebre.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="mono()"><img src="/assets/Imagenes/vertical/monocap.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="oryx()"><img src="/assets/Imagenes/vertical/oryx.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container boton">
+    <button type="button" class="btn btn-outline-success" (click)="animales()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+      </svg> 
+  REGRESAR A ANIMALES</button>
+</div>

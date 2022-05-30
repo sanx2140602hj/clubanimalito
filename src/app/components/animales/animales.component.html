@@ -1,0 +1,202 @@
+<style>
+    .hero img {
+        width: 100%;
+        display: block;
+        margin-top: 7.5%;
+    }
+    
+    .animales {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    .animales img {
+        height: 90px;
+        width: 90px;
+    }
+    .anim {
+        margin-bottom: 50px;
+    }
+    .anim .card{
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    .anim .col{
+        display:flex;
+        justify-content: center;
+    }
+    .anim button{
+        border: none;
+        background-color: transparent;
+    }
+</style>
+<div class="hero">
+    <img src="/assets/Imagenes/zoo2.jpg" />
+</div>
+
+<div class="animales">
+    <img src="/assets/Imagenes/ico/leon.png" />
+    <h1 class="info">ANIMALES</h1>
+</div>
+
+<div class="container anim">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="aguililla()"><img src="/assets/Imagenes/vertical/aguililla.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="antilope()"><img src="/assets/Imagenes/vertical/antilope.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="buitre()"><img src="/assets/Imagenes/vertical/buitre.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<div class="container anim">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="cabra()"><img src="/assets/Imagenes/vertical/cabra.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="cacatua()"><img src="/assets/Imagenes/vertical/cacatua.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                 <button (click)="capibara()"><img src="/assets/Imagenes/vertical/capibara.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container anim">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100" >
+                 <button (click)="caracara()"><img src="/assets/Imagenes/vertical/caracará.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                 <button (click)="chachalaca()"><img src="/assets/Imagenes/vertical/chachalacas.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                 <button (click)="ciervo()"><img src="/assets/Imagenes/vertical/ciervo.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container anim">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                 <button (click)="gato()"><img src="/assets/Imagenes/vertical/gatbengali.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="guacamaya()"><img src="/assets/Imagenes/vertical/guacamalla.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                 <button (click)="guanaco()"><img src="/assets/Imagenes/vertical/guanaco.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<div class="container anim">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="jaguar()"><img src="/assets/Imagenes/vertical/jaguar.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="lemur()"><img src="/assets/Imagenes/vertical/lemur.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="leon()"><img src="/assets/Imagenes/vertical/leon.png" class="card-img-top" alt="..."></button> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container anim">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100" >
+                <button (click)="liebre()"><img src="/assets/Imagenes/vertical/liebre.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="mono()"><img src="/assets/Imagenes/vertical/monocap.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="oryx()"><img src="/assets/Imagenes/vertical/oryx.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container anim">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100" >
+                <button (click)="oso()">  <img src="/assets/Imagenes/vertical/oso.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="pantera()">   <img src="/assets/Imagenes/vertical/pantera.png" class="card-img-top" alt="..."> </button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="pava()">  <img src="/assets/Imagenes/vertical/pava.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container anim">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100" >
+                <button (click)="tigreblanco()"><img src="/assets/Imagenes/vertical/tigreblanco.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="tigrillo()"><img src="/assets/Imagenes/vertical/tigrillo.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="tortuga()"><img src="/assets/Imagenes/vertical/tortuga.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>

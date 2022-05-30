@@ -1,0 +1,210 @@
+<style>
+    .hero img {
+        width: 100%;
+        display: flex;
+        margin-top: 7.5%;
+    }
+    
+    .hero .nombre {
+        margin-top: -40px;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero .nombre h1 {
+        background-color: #D2B781;
+        color: white;
+        font-size: 3rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .animales {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .animales img {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .anim {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #D2B781;
+        margin-bottom: 50px;
+    }
+    
+    .anim h2 {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .anim .card {
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    
+    .anim .col {
+        justify-content: end;
+        text-align: end;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .anim .cola {
+        justify-content: start;
+        text-align: start;
+    }
+    
+    .anim .col div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .descripcion h2 {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .descripcion div {
+        font-size: 20px;
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+    
+    .tarjeta {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tarjeta .card {
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    
+    .tarjeta button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .boton {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .texx {
+        text-align: justify;
+    }
+</style>
+<div class="hero">
+    <img src="../../../../assets/Imagenes/infoani/cacatua.jpg" />
+    <div class="nombre">
+        <h1>CACATÚA</h1>
+        <!-- MAYUSCUALAS -->
+    </div>
+</div>
+
+<div class="animales">
+    <img src="/assets/Imagenes/aguila.png" />
+</div>
+
+<div class="container anim">
+    <h2>INFORMACION GENERAL</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>Nombre Científico:</div>
+                <div>Clase:</div>
+                <div>Orden:</div>
+                <div>Familia:</div>
+                <div>Alimentación:</div>
+                <div>Hábitat:</div>
+                <div>Camada:</div>
+                <div>Incubación:</div>
+                <!--  Incubación / Gestación-->
+                <div>Longevidad:</div>
+            </div>
+            <div class="cola col">
+                <div>Cacatuidae</div>
+                <!-- Nombre Científico -->
+                <div>Aves</div>
+                <!--  Clase -->
+                <div>Psittaciformes</div>
+                <!--  Orden -->
+                <div>Cacatuidae</div>
+                <!--  Familia -->
+                <div>semillas, frutos, flores e insectos</div>
+                <!--  Alimentación -->
+                <div>Bosques</div>
+                <!--  Hábitat-->
+                <div>2 a 8 huevos</div>
+                <!--  Camada-->
+                <div>20 a 22 días</div>
+                <!--  Incubación / gestacion-->
+                <div>20 a 40 años</div>
+                <!--  Longevidad-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container descripcion">
+    <h2>DESCRIPCION</h2>
+    <div class="texx">
+        Son aves gregarias fuera de la época de cría. En invierno llegan a formar bandadas de más de cien ejemplares. Suelen alimentarse en el suelo, con algunos individuos posados en los árboles para vigilar y alertar de las posibles amenazas. Ponen entre uno
+        y tres Huevos (normalmente dos), que miden unos 48 x 33 mm. Ambos sexos los incuban por unos treinta días, y los pollos se independizan tras cuarenta días de cuidado paterno. Es una cacatúa grande, mide unos 50 cm y pesa alrededor de 900 g. Las
+        hembras son ligeramente mayores. Su plumaje es de color blanco, con una cresta amarilla de largas plumas; y con ciertos matices amarillentos por debajo de las alas y de la cola. Las alas son anchas y de forma redondeada. El pico y las patas son
+        de color gris negruzco.
+    </div>
+</div>
+<div class="container tarjeta">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="gato()"><img src="/assets/Imagenes/vertical/gatbengali.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="guacamaya()"><img src="/assets/Imagenes/vertical/guacamalla.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="guanaco()"><img src="/assets/Imagenes/vertical/guanaco.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container boton">
+    <button type="button" class="btn btn-outline-success" (click)="animales()">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-arrow-bar-left"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"
+      />
+    </svg>
+    REGRESAR A ANIMALES
+  </button>
+</div>

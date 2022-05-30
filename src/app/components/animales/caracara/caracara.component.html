@@ -1,0 +1,213 @@
+<style>
+    .hero img {
+        width: 100%;
+        display: flex;
+        margin-top: 7.5%;
+    }
+    
+    .hero .nombre {
+        margin-top: -40px;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero .nombre h1 {
+        background-color: #E09150;
+        color: white;
+        font-size: 3rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .animales {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .animales img {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .anim {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #E09150;
+        margin-bottom: 50px;
+    }
+    
+    .anim h2 {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .anim .card {
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    
+    .anim .col {
+        justify-content: end;
+        text-align: end;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .anim .cola {
+        justify-content: start;
+        text-align: start;
+    }
+    
+    .anim .col div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .descripcion h2 {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .descripcion div {
+        font-size: 20px;
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+    
+    .tarjeta {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tarjeta .card {
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    
+    .tarjeta button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .boton {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .texx {
+        text-align: justify;
+    }
+</style>
+<div class="hero">
+    <img src="../../../../assets/Imagenes/infoani/caracara.jpg" />
+    <div class="nombre">
+        <h1>CARACARÁ QUEBRANTAHUESOS </h1>
+        <!-- MAYUSCUALAS -->
+    </div>
+</div>
+
+<div class="animales">
+    <img src="/assets/Imagenes/aguila.png" />
+</div>
+
+<div class="container anim">
+    <h2>INFORMACION GENERAL</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>Nombre Científico:</div>
+                <div>Clase:</div>
+                <div>Orden:</div>
+                <div>Familia:</div>
+                <div>Alimentación:</div>
+                <div>Hábitat:</div>
+                <div>Camada:</div>
+                <div>Incubación:</div>
+                <!--  Incubación / Gestación-->
+                <div>Longevidad:</div>
+            </div>
+            <div class="cola col">
+                <div> Caracará</div>
+                <!-- Nombre Científico -->
+                <div> Aves </div>
+                <!--  Clase -->
+                <div> Falconiformes </div>
+                <!--  Orden -->
+                <div> Falconidae</div>
+                <!--  Familia -->
+                <div> Mamíferos pequeños, peces e incestos</div>
+                <!--  Alimentación -->
+                <div>Praderas húmedas, llanuras y desiertos</div>
+                <!--  Hábitat-->
+                <div>2 a 4 huevos</div>
+                <!--  Camada-->
+                <div>30 a 31 días</div>
+                <!--  Incubación / gestacion-->
+                <div>7 a 8 años</div>
+                <!--  Longevidad-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container descripcion">
+    <h2>DESCRIPCION</h2>
+    <div class="texx">
+        El Quebrantahuesos posee ojos rodeados de un anillo esclerótilo de color rojo, que resalta más cuando el ejemplar se muestra más agresivo o nervioso. Desde los ojos se extiende un antifaz negro hasta la base del pico, donde aparecen unas filoplumas (barbas).
+        En la parte superior de la cabeza poseen unas plumas negras que forman un capirote. La cola tiene forma de cuña o rombo y los tarsos están cubiertos de plumas. Atraviesa diferentes tipos de plumaje en función de la edad (joven, subadulto y adulto).
+        Poseen el mismo color para ambos sexos, en el caso de los adultos de color naranja debido a la costumbre que tiene de teñir su plumaje con barro. tiene una longitud de 49-58 cm, una envergadura de 120 cm, y pesa 1050-1300 g. No son cazadores aéreos
+        rápidos; su vuelo es más bien lento. Tiene una dieta muy amplia que incluye carroña. Caza pequeños mamíferos, anfibios, reptiles, peces, cangrejos, insectos y lombrices de tierra. También trata de robar las presas de otras aves. Construye grandes
+        nidos en árboles como mezquites y palmas, cactus, o en el suelo como último recurso.
+
+    </div>
+
+</div>
+<div class="container tarjeta">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="cabra()"><img src="/assets/Imagenes/vertical/cabra.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="cacatua()"><img src="/assets/Imagenes/vertical/cacatua.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="capibara()"><img src="/assets/Imagenes/vertical/capibara.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container boton">
+    <button type="button" class="btn btn-outline-success" (click)="animales()">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-arrow-bar-left"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"
+      />
+    </svg>
+    REGRESAR A ANIMALES
+  </button>
+</div>

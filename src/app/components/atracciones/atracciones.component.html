@@ -1,0 +1,81 @@
+<style>
+    .hero img {
+        width: 100%;
+        display: block;
+        margin-top: 7.5%;
+    }
+    
+    .atracciones {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    
+    .atracciones img {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .atrac {
+        margin-bottom: 50px;
+    }
+    .atrac button{
+        border: none;
+        background: transparent;
+    }
+    .card{
+        border: none;
+    }
+  
+    
+
+</style>
+<div class="hero">
+    <img src="../../../assets/Imagenes/atraaciones.jpg" />
+</div>
+
+<div class="atracciones">
+    <img src="/assets/Imagenes/ico/oso.png" />
+    <h1 class="info">ATRACCIONES</h1>
+</div>
+
+<div class="container atrac">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 ">
+                <button (click)="felinos()"><img src="/assets/Imagenes/atracciones/felinos.png " class="card-img-top " alt="... "> </button>
+            </div>
+        </div>
+        <div class="col ">
+                <div class="card h-100 ">
+                    <button (click)="estepa()"><img src="/assets/Imagenes/atracciones/estepa.png " class="card-img-top " alt="... "></button>
+                </div>
+        </div>
+        <div class="col ">
+            <div class="card h-100  " >
+                <button (click)="monos()"><img src="/assets/Imagenes/atracciones/monos.png " class="card-img-top " alt="... "></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container atrac ">
+    <div class="row row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col ">
+            <div class="card h-100 ">
+                <button (click)="aviario()"><img src="/assets/Imagenes/atracciones/aviario.png " class="card-img-top " alt="... "></button>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card h-100 ">
+                <button (click)="taiga()"> <img src="/assets/Imagenes/atracciones/taiga.png " class="card-img-top " alt="... "></button>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card h-100 ">
+                <button (click)="herpetario()"> <img src="/assets/Imagenes/atracciones/hepetario.png " class="card-img-top " alt="... "></button>
+            </div>
+        </div>
+    </div>
+</div>
+

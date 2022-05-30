@@ -1,0 +1,191 @@
+<style>
+    .hero img {
+        width: 100%;
+        display: flex;
+        margin-top: 7.5%;
+    }
+    
+    .hero .nombre {
+        margin-top: -40px;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero .nombre h1 {
+        background-color: #bc733f;
+        color: white;
+        font-size: 3rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .animales {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .animales img {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .anim {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #bc733f;
+        margin-bottom: 50px;
+    }
+    
+    .anim h2 {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .anim .card {
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    
+    .anim .col {
+        justify-content: end;
+        text-align: end;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .anim .cola {
+        justify-content: start;
+        text-align: start;
+    }
+    
+    .anim .col div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .descripcion h2 {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .descripcion div {
+        font-size: 20px;
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+    
+    .tarjeta {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tarjeta .card {
+        height: 200px;
+        width: 300px;
+        border: none;
+    }
+    
+    .tarjeta button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .boton {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .texx {
+        text-align: justify;
+    }
+</style>
+<div class="hero">
+    <img src="/assets/Imagenes/infoani/antilope.jpg" />
+    <div class="nombre">
+        <h1>ANTILOPE ELAND</h1>
+        <!-- MAYUSCUALAS -->
+    </div>
+</div>
+
+<div class="animales">
+    <img src="/assets/Imagenes/aguila.png" />
+</div>
+
+<div class="container anim">
+    <h2>INFORMACION GENERAL</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>Nombre Científico:</div>
+                <div>Clase:</div>
+                <div>Orden:</div>
+                <div>Familia:</div>
+                <div>Alimentación:</div>
+                <div>Hábitat:</div>
+                <div>Camada:</div>
+                <div>Gestacion:</div>
+                <div>Longevidad:</div>
+            </div>
+            <div class="cola col">
+                <div> Tragelaphus oryx</div>
+                <div> Mammalia</div>
+                <div> Artiodactyla</div>
+                <div> Bovidae</div>
+                <div> Herbívora</div>
+                <div> Planicies y montañosa</div>
+                <div> una cría</div>
+                <div> 254 a 377 días </div>
+                <div> 24 años</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container descripcion">
+    <h2>DESCRIPCION</h2>
+    <div class="texx">
+        Los dos sexos poseen cuernos a modo de espiral, siendo los de las hembras, más largos que los de los machos, aunque en dichos últimos, son más fuertes. El Eland es un antílope gregario y constituye equipos de alrededor de 25 individuos, en los cuales
+        hay hembras adultas, crías, adolescentes y uno o diversos machos adultos. No obstante, por igual se han visto conjuntos de hembras adolescentes, conjuntos de machos y machos solitarios. Los conjuntos de hembras y adolescentes tienen la posibilidad
+        de contener hasta 200 o más individuos. La estación reproductora, podría ser en cualquier etapa del año, y entre los machos está establecido una jerarquía que previene los combates una vez que bastante más de uno aspira aparearse con las hembras.
+        A las escasas horas de nacer, las crías del Eland, son capaces de trotar, y poseen una enorme inclinación a caminar en fila india, de la misma forma que lo realizan los adultos. Además, se observa una gigantesca tendencia a quedar ligados en las
+        personas adolescentes. Los machos alcanzan la madurez sexual a los 4 años y las hembras a los 3. Tienen la posibilidad de procrear hasta los 19 años. La existencia de los machos en los conjuntos de hembras podría ser temporal y poseen dominancia
+        jerárquica.
+    </div>
+</div>
+<div class="container tarjeta">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="oso()">  <img src="/assets/Imagenes/vertical/oso.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="pantera()">   <img src="/assets/Imagenes/vertical/pantera.png" class="card-img-top" alt="..."> </button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <button (click)="pava()">  <img src="/assets/Imagenes/vertical/pava.png" class="card-img-top" alt="..."></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container boton">
+    <button type="button" class="btn btn-outline-success" (click)="animales()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+      </svg> 
+  REGRESAR A ANIMALES</button>
+</div>
